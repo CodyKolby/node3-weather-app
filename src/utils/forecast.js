@@ -11,7 +11,7 @@ const forecast = function (latitude, longtitude, callback) {
     } else {
       callback(
         undefined,
-        `It is currenlty ${body.current.temperature} degress out. There is ${body.current.precip}% chane of rain`
+        `It is currenlty ${body.current.temperature} degress out. There is ${body.current.precip}% chane of rain and humidity is on the level of ${body.current.humidity}%`
       );
     }
   });
